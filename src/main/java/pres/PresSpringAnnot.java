@@ -7,7 +7,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class PresSpringAnnot {
     public static void main(String[] args) {
-        ApplicationContext context = new AnnotationConfigApplicationContext("dao","metier");
+        ApplicationContext context = new AnnotationConfigApplicationContext("metier","ext");
         IMetier metier = context.getBean(IMetier.class);
         System.out.println(metier.calcul());
     }

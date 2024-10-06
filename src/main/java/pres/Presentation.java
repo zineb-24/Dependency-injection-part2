@@ -9,7 +9,7 @@ public class Presentation {
         instanciation statique => new
          */
         DaoImpl2 dao = new DaoImpl2();
-        IMetierImpl metier = new IMetierImpl(dao);
+        IMetierImpl metier = new IMetierImpl();
         //metier.setDao(dao);
         System.out.println("Résultat = "+metier.calcul());
     }
